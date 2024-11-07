@@ -1,0 +1,16 @@
+<app-side-navigator-bar></app-side-navigator-bar>
+
+<div class="profile-container">
+  <div class="profile-card">
+    <img src="assets/images/chef.png" alt="Foto del Dueño" class="profile-photo">
+    <h2>{{ owner.name }}</h2>
+    <p class="position">{{ owner.position }}</p>
+    <div class="profile-details">
+      <p><strong>Email:</strong> {{ owner.email }}</p>
+      <p><strong>Phone:</strong> {{ owner.phone }}</p>
+      <p><strong>Restaurant:</strong> {{ owner.restaurantName }}</p>
+      <p><strong>Location:</strong> {{ owner.location }}</p>
+    </div>
+    <button (click)="logout()" class="logout-button">Out</button>
+  </div>
+</div>
